@@ -97,24 +97,6 @@
               <groupId>org.codehaus.mojo</groupId>
               <artifactId>rpm-maven-plugin</artifactId>
               <version>2.1.5</version>
-              <executions>
-                <execution>
-                  <id>generate-rpm</id>
-                  <goals>
-                    <goal>rpm</goal>
-                  </goals>
-                </execution>
-                <configuration>
-                  <defineStatements>
-                    <defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
-                  </defineStatements>
-                  <mappings>
-                    <mapping>
-                      <directory>/tmp</directory>
-                    </mapping>
-                  </mappings>
-                </configuration>
-              </executions>
             </plugin>
 
         </plugins>
