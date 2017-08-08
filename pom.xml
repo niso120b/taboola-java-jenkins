@@ -110,12 +110,12 @@
     					<description>Maven Recipe: RPM Package.</description>
     					<mappings>
     						<mapping>
-    							<directory>lib</directory>
+    							<directory>/lib</directory>
     							<dependency/>
     							<artifact/>
     						</mapping>
     						<mapping>
-    							<directory>conf</directory>
+    							<directory>/conf</directory>
     							<configuration>true</configuration>
     							<sources>
     								<source>
@@ -124,7 +124,7 @@
     							</sources>
     						</mapping>
     						<mapping>
-    							<directory>logs</directory>
+    							<directory>/logs</directory>
     						</mapping>
     					</mappings>
     				</configuration>
