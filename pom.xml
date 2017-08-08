@@ -158,20 +158,8 @@
                     </sources>
                   </mapping>
                 </mappings>
-                <preinstallScriptlet>
-                  <script>echo "installing now"</script>
-                </preinstallScriptlet>
-                <postinstallScriptlet>
-                  <scriptFile>src/main/scripts/postinstall</scriptFile>
-                  <fileEncoding>utf-8</fileEncoding>
-                </postinstallScriptlet>
-                <preremoveScriptlet>
-                  <scriptFile>src/main/scripts/preremove</scriptFile>
-                  <fileEncoding>utf-8</fileEncoding>
-                </preremoveScript>
               </configuration>
             </plugin>
-
         </plugins>
 
     </build>
