@@ -94,17 +94,17 @@
             </plugin>
 
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>rpm-maven-plugin</artifactId>
-                <version>2.1.5</version>
-                <extensions>
-                    <execution>
-                        <id>attach-rpm</id>
-                        <goals>
-                            <goal>attached-rpm</goal>
-                        </goals>
-                    </execution>
-                </extensions>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>rpm-maven-plugin</artifactId>
+              <version>2.1.5</version>
+              <extensions>
+                <execution>
+                  <id>attach-rpm</id>
+                  <goals>
+                    <goal>attached-rpm</goal>
+                  </goals>
+                </execution>
+              </extensions>
             </plugin>
 
         </plugins>
