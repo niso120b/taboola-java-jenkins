@@ -105,15 +105,28 @@
                   </goals>
                 </execution>
                 <configuration>
-                  <name>calc</name>
-                  <copyright>taboola</copyright>
-                  <release>1.0</release>
-                  <group>DOC/COD</group>
+                  <license>GPL (c) 2005, SWWDC</license>
+                  <distribution>Trash 2005</distribution>
+                  <group>Application/Collectors</group>
+                  <packager>SWWDC</packager>
+                  <prefix>/usr/local</prefix>
+                  <changelogFile>src/changelog</changelogFile>
+                  <defineStatements>
+                    <defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
+                  </defineStatements>
                   <mappings>
-                      <mapping>
-                        <directory>/tmp</directory>
-                      </mapping>
-                  </mappings>
+                    <mapping>
+                      <directory>/usr/local/bin/calc</directory>
+                      <filemode>440</filemode>
+                      <username>dumper</username>
+                      <groupname>dumpgroup</groupname>
+                      <sources>
+                        <source>
+                          <location>target/</location>
+                        </source>
+                      </sources>
+                    </mapping>
+                  </mapping>
                 </configuration>
               </executions>
             </plugin>
