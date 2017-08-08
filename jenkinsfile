@@ -17,5 +17,6 @@ node {
    }
    stage('Results') {
       archive 'target/*.jar'
+      sh "sudo rpm -Uvh /var/lib/jenkins/workspace/java_rpm/target/rpm/taboola_test/RPMS/noarch/*.rpm"
    }
 }
