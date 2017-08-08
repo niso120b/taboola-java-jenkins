@@ -119,7 +119,7 @@
     							<configuration>true</configuration>
     							<sources>
     								<source>
-    									<location>${project.build.outputDirectory}/app.properties</location>
+    									<location>${project.build.outputDirectory}/</location>
     									<destination>app.sample.properties</destination>
     								</source>
     							</sources>
