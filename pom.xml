@@ -104,62 +104,20 @@
                     <goal>rpm</goal>
                   </goals>
                 </execution>
+                <configuration>
+                  <name>calc</name>
+                  <copyright>taboola</copyright>
+                  <release>1.0</release>
+                  <group>DOC/COD</group>
+                  <mappings>
+                      <mapping>
+                        <directory>/tmp</directory>
+                      </mapping>
+                  </mappings>
+                </configuration>
               </executions>
-              <configuration>
-                <license>GPL (c) 2017, Taboola</license>
-                <distribution>Clac 2017</distribution>
-                <group>Application/Collectors</group>
-                <packager>SWWDC</packager>
-                <prefix>/usr/local</prefix>
-                <changelogFile>src/changelog</changelogFile>
-                <defineStatements>
-                  <defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
-                </defineStatements>
-                <mappings>
-                  <mapping>
-                    <directory>/usr/local/bin/calc</directory>
-                    <filemode>440</filemode>
-                    <username>calc</username>
-                    <groupname>taboola</groupname>
-                    <sources>
-                      <source>
-                        <location>${project.build.directory}/</location>
-                      </source>
-                    </sources>
-                  </mapping>
-                  <mapping>
-                    <directory>/usr/local/lib</directory>
-                    <filemode>750</filemode>
-                    <username>calc</username>
-                    <groupname>taboola</groupname>
-                    <dependency>
-                      <includes>
-                        <include>jmock:jmock</include>
-                        <include>javax.servlet:servlet-api:2.4</include>
-                      </includes>
-                      <excludes>
-                        <exclude>junit:junit</exclude>
-                      </excludes>
-                    </dependency>
-                  </mapping>
-                  <mapping>
-                    <directory>/usr/local/bin</directory>
-                    <filemode>750</filemode>
-                    <username>calc</username>
-                    <groupname>taboola</groupname>
-                    <sources>
-                      <source>
-                        <location>src/main/bin</location>
-                      </source>
-                      <softlinkSource>
-                        <location>/usr/local/bin/calc.sh</location>
-                        <destination>calc.sh</destination>
-                      </softlinkSource>
-                    </sources>
-                  </mapping>
-                </mappings>
-              </configuration>
             </plugin>
+
         </plugins>
 
     </build>
