@@ -105,6 +105,9 @@
                   </goals>
                 </execution>
                 <configuration>
+                  <defineStatements>
+                    <defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
+                  </defineStatements>
                   <mappings>
                     <mapping>
                       <directory>/tmp</directory>
