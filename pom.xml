@@ -104,6 +104,13 @@
                     <goal>rpm</goal>
                   </goals>
                 </execution>
+                <configuration>
+                  <mappings>
+                    <mapping>
+                      <directory>/tmp</directory>
+                    </mapping>
+                  </mappings>
+                </configuration>
               </executions>
             </plugin>
 
