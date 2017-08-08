@@ -98,36 +98,51 @@
     				<artifactId>rpm-maven-plugin</artifactId>
     				<version>2.0.1</version>
     				<executions>
-    					<execution>
-    						<goals>
-    							<goal>rpm</goal>
-    						</goals>
-    					</execution>
+              <execution>
+                 <id>attach-rpm</id>
+                    <goals>
+                       <goal>attached-rpm</goal>
+                    </goals>
+              </execution>
     				</executions>
-    				<configuration>
-    					<copyright>2017, NoBody</copyright>
-    					<group>Development</group>
-    					<description>Maven Recipe: RPM Package.</description>
-    					<mappings>
-    						<mapping>
-    							<directory>/lib</directory>
-    							<dependency/>
-    							<artifact/>
-    						</mapping>
-    						<mapping>
-    							<directory>/conf</directory>
-    							<configuration>true</configuration>
-    							<sources>
-    								<source>
-    									<location>${project.build.outputDirectory}/</location>
-    								</source>
-    							</sources>
-    						</mapping>
-    						<mapping>
-    							<directory>/logs</directory>
-    						</mapping>
-    					</mappings>
-    				</configuration>
+            <configuration>
+               <copyright>2017 Taboola Exam</copyright>
+               <group>Development</group>
+               <description>Taboola Jenkins Calc</description>
+               <mappings>
+                 <mapping>
+                   <directory>/usr/local/bin/calclib</directory>
+                   <filemode>655</filemode>
+                   <username>root</username>
+                   <sources>
+                      <source>
+                         <location>target/taboola_test-${project.version}.jar</location>
+                         <destination>calc.jar</destination>
+                      </source>
+                   </sources>
+                 </mapping>
+                 <mapping>
+                   <directory>/usr/local/bin/calclib/lib</directory>
+                   <filemode>655</filemode>
+                   <username>root</username>
+                   <sources>
+                      <source>
+                         <location>target/lib</location>
+                      </source>
+                   </sources>
+                 </mapping>
+                 <mapping>
+                    <directory>/usr/local/bin</directory>
+                    <filemode>655</filemode>
+                    <username>root</username>
+                    <sources>
+                       <source>
+                          <location>bin/calc</location>
+                       </source>
+                    </sources>
+                 </mapping>
+               </mappings>
+             </configuration>
     			</plugin>
 
         </plugins>
