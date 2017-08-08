@@ -120,7 +120,6 @@
     							<sources>
     								<source>
     									<location>${project.build.outputDirectory}/</location>
-    									<destination>app.sample.properties</destination>
     								</source>
     							</sources>
     						</mapping>
