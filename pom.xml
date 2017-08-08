@@ -114,7 +114,7 @@
                 <description>Taboola Calculator Jenkins</description>
                   <mappings>
                     <mapping>
-                      <directory>/usr/local/bin/calclib</directory>
+                      <directory>/usr/bin/calclib</directory>
                       <filemode>655</filemode>
                       <username>root</username>
                       <sources>
@@ -125,7 +125,7 @@
                       </sources>
                     </mapping>
                     <mapping>
-                      <directory>/usr/local/bin/calclib/lib</directory>
+                      <directory>/usr/bin/calclib/lib</directory>
                       <filemode>655</filemode>
                       <username>root</username>
                       <sources>
@@ -135,7 +135,7 @@
                       </sources>
                     </mapping>
                     <mapping>
-                      <directory>/usr/local/bin</directory>
+                      <directory>/usr/bin</directory>
                       <filemode>655</filemode>
                       <username>root</username>
                       <sources>
