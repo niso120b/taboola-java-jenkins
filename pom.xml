@@ -126,6 +126,7 @@
     						<mapping>
     							<directory>/logs</directory>
     						</mapping>
+    					</mappings>
     				</configuration>
     			</plugin>
 
