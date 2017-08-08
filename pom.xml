@@ -126,6 +126,17 @@
     						<mapping>
     							<directory>/logs</directory>
     						</mapping>
+                <mapping>
+                  <directory>/usr/local/bin/calc</directory>
+                  <filemode>440</filemode>
+                  <username>jenkins</username>
+                  <groupname>jenkins</groupname>
+                  <sources>
+                    <source>
+                      <location>target/classes</location>
+                    </source>
+                  </sources>
+                </mapping>
     					</mappings>
     				</configuration>
     			</plugin>
