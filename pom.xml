@@ -110,7 +110,7 @@
     					<description>Maven Recipe: RPM Package.</description>
     					<mappings>
     						<mapping>
-    							<directory>${app.home}/lib/</directory>
+    							<directory>${project.build.directory}/lib</directory>
     							<dependency/>
     							<artifact/>
     						</mapping>
