@@ -115,7 +115,7 @@
     							<artifact/>
     						</mapping>
     						<mapping>
-    							<directory>${app.home}/conf</directory>
+    							<directory>conf/</directory>
     							<configuration>true</configuration>
     							<sources>
     								<source>
